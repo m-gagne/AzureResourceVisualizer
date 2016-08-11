@@ -169,6 +169,16 @@ module ArmViz {
       });
     }
 
+    openPricingEstimator() {
+      this.$modal.open({
+        templateUrl: '/app/pricingEstimator/PricingEstimatorDialog.html',
+        controller: 'PricingEstimatorController',
+        controllerAs: 'main',
+        size: 'lg'
+      });
+    }
+    
+
     deployToAzure() {
       let url = 'http://armportaluiredirector.azurewebsites.net/?json=POST';
 

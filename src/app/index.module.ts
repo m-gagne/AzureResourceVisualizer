@@ -33,6 +33,7 @@ module ArmViz.Module {
       .controller('ResourceEditorController', ArmViz.ResourceEditorController)
       .controller('CreateVisualizerButtonController', ArmViz.CreateVisualizerButtonController)
       .controller('PortalUIEditorController', PortalUIEditor.ResourceEditorController)
+      .controller('PricingEstimatorController', PricingEstimator.PricingEstimatorController)
 
       .directive('ngFileSelect', Directives.ngFileSelect)
       ; //this is intentional :-)
