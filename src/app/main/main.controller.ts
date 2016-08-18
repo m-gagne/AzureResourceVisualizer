@@ -174,7 +174,14 @@ module ArmViz {
         templateUrl: '/app/pricingEstimator/PricingEstimatorDialog.html',
         controller: 'PricingEstimatorController',
         controllerAs: 'main',
-        size: 'lg'
+        size: 'lg',
+        
+        //These items get passed to the child controller
+        resolve: {
+          armTemplate: () => {
+            return this.template;
+          }
+        }
       });
     }
     
